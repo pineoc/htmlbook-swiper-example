@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    background: #1b1b1b;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #1b1b1b;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*home btn div*/
+#goHomeBtn {
+    position: absolute;
+    background: url(../img/home.png) no-repeat center center;
+    background-size: contain;
+    top: 3%;
+    left: 4%;
+    width: 7%;
+    height: 5%;
+    z-index: 10;
+}
+
+/*index btn div*/
+#popIndexBtn {
+    position: absolute;
+    background: url(../img/index.png) no-repeat center center;
+    background-size: contain;
+    top: 3%;
+    right: 4%;
+    width: 7%;
+    height: 5%;
+    z-index: 11;
+}
+
+/*index popup Div*/
+#indexDiv {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(11, 11, 11, .9);
+    text-align: left;
+    padding: 20px;
+    font-size: 4.0vw;
+}
+
+.pop-text {
+    color:white;
+    font-size: 4.0vw;
+}
+
+/*page backgroud image fullscreen settings*/
+.fit-bg {
+    position: relative;
+    overflow:auto;
+    width: 100%;
+    height: auto;
+}
+
+.fit-bg img {
+    width: 100%;
+}

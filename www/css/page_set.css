@@ -1,0 +1,26 @@
+
+/*========page 2 tags=======*/
+
+.index-1 {
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 4%;
+    left: 9%;
+    top: 25.5%;
+    border-width: 1px;
+    border-style: outset;
+}
+
+.index-2 {
+    display: block;
+    position: absolute;
+    width: 27%;
+    height: 10%;
+    left: 9%;
+    top: 30.0%;
+    border-width: 1px;
+    border-style: outset;
+}
+
+/*========page 2 tags=======*/

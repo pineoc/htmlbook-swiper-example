@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="net.moon1000.kingkongM8" 
+        version="0.0.1"
+        android-versionCode="4"
+        xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>kingkongMagazine</name>
+    <description>
+        kingkong ebook
+    </description>
+    <author email="pineoc@moon1000.net" href="">
+        Moon1000 inc. pineoc
+    </author>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="orientation" value="portrait" />
+    <content src="book.html" />
+    
+    <access origin="*" />
+    <access origin="cdvfile://*" />
+    
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="18" />
+        <preference name="android-targetSdkVersion" value="14" />
+        <preference name="AndroidPersistentFileLocation" value="Internal" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

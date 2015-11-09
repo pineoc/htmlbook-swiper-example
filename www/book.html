@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!-- Link Swiper's CSS & fancybox's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <!-- book, page set CSS -->
+    <link rel="stylesheet" href="css/page_set.css" />
+    <link rel="stylesheet" href="css/book_set.css" />
+
+    <!-- jquery, fancybox javascript file  -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/book_func.js"></script>
+</head>
+
+<body>
+    <audio id="book_effect">
+        <source src="" />
+    </audio>
+    <div id="goHomeBtn" onclick="goHomeFunction()"></div>
+    <div id="popIndexBtn" onclick="popUpIndexDiv()"></div>
+    <div id="indexDiv">
+        <h1 class="pop-index-title pop-text">목차</h1>
+        <h2 class="pop-index-1 pop-text" onclick="popUpIndexFunction(3)">1. 편집장의 말</h2>
+        <h2 class="pop-index-2 pop-text" onclick="popUpIndexFunction(4)">2. 이달의 특집기사_터닝메카드를 아직도 몰라?</h2>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="p1">
+                <div class="fit-bg">
+                    <img src="img/1.jpg" />
+                </div>
+            </div>
+            <div class="swiper-slide" id="p2">
+                <div class="fit-bg">
+                    <img src="img/2.jpg" />
+                    <a id="idx" class="index-1" onclick="indexFunction(3)"> </a>
+                    <a id="idx" class="index-2" onclick="indexFunction(4)"> </a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="p3">
+                <div class="fit-bg">
+                    <img src="img/3.jpg" />
+                </div>
+            </div>
+            <div class="swiper-slide" id="p4">
+                <div class="fit-bg">
+                    <img src="img/4.jpg" />
+                </div>
+            </div>
+            <div class="swiper-slide" id="p5">
+                <div class="fit-bg">
+                    <img src="img/5.jpg" />
+                    <a id="aImg5-1" class="fancybox" rel="group1" href="img/5_1.jpg">
+                        <img src="img/5_1.jpg" />
+                    </a>
+                    <a id="aImg5-2" class="fancybox" rel="group1" href="img/5_2.jpg">
+                        <img src="img/5_2.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!-- make book using swiper & some functions-->
+    <script type="text/javascript" src="js/book_init.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        //init swiper
+        swiper = new Swiper('.swiper-container');
+    </script>
+</body>
+
+</html>
