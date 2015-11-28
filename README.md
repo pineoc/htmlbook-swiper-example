@@ -1,12 +1,15 @@
 # htmlbook-swiper-example
 htmlbook-swiper example repo
 
+##Framework
+- Cordova - for hybrid app
+
 ##Libs
--Swipers  Link : http://www.idangero.us/swiper/#.VkA9PLfhCUk
+- Swipers  Link : http://www.idangero.us/swiper/#.VkA9PLfhCUk
 
--FancyBox Link : http://fancybox.net/
+- FancyBox Link : http://fancybox.net/
 
--jQuery Link : https://jquery.com/
+- jQuery Link : https://jquery.com/
 
 ##Application Specification
 1. single page application
