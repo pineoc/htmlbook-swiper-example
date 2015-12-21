@@ -23,4 +23,22 @@
     border-style: outset;
 }
 
-/*========page 2 tags=======*/
+/*========page 5 tags=======*/
+#aImg5-1 {
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: 8.5%;
+}
+#aImg5-1 > img {
+    width: 25%;
+}
+#aImg5-2 {
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: 35%;
+}
+#aImg5-2 > img {
+    width: 42%;
+}
